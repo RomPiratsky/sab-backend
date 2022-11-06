@@ -1,24 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Версии
+* Ruby: 3.0.1
+* Rails: 7.0.4
+* Postgres: 1.4.1
 
-Things you may want to cover:
+## Приложение создается и сразу поднимается в Docker контейнерах следующей командой: 
 
-* Ruby version
+Выполнить в папке с приложением команду:
+```bash
+make init
+```
+##Основные команды для работы  сконтейнерами:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+###Чтобы пройти в контейнер с приложением: 
+```bash
+make bash
+```
+###Чтобы поднять контейнеры:
+```bash
+make up
+```
+###Чтобы остановить контейнеры:
+```bash
+make down
+```
+###Чтобы посмотреть список поднятых контейнеров:
+```bash
+make ps
+```
